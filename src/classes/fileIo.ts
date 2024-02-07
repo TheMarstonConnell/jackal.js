@@ -358,7 +358,7 @@ export default class FileIo implements IFileIo {
         const msgSign: EncodeObject = pH.storageTx.msgSignContract({
           creator,
           cid,
-          payOnce: false
+          payOnce: true
         })
         return [msgPost, msgSign]
       })
